@@ -24,6 +24,9 @@ if (!isset($_GET['page']) || $_GET['page'] == null) {
     case 'projects': //Projetos
       include "./pages/projects.php";
       break;
+    case 'dashboardReceptionist': //Dashboard Receptionist
+      include "./pages/dashboardReceptionist.php";
+      break;
 
 
 
