@@ -226,7 +226,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'logout') {
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a class="" href="?page=customers">
+                            <a class="" href="?page=dashboardReceptionist">
                                 <span class="icon-holder">
                                     <i class="anticon anticon-inbox"></i>
                                 </span>

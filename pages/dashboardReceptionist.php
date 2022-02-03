@@ -75,25 +75,44 @@
                         </div>
                         <hr class="" />
                         <div class="">
-                            <form class="row g-3 needs-validation" novalidate>
-                                <div class="col-md-2">
-                                    <label for="validationCustom01" class="form-label">Número do Protocolo</label>
-                                    <input type="text" disabled class="form-control" id="validationCustom01" value="<?= date("Ymd", time()) . str_pad('1', 4, "0", STR_PAD_LEFT);?>" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
+                            <form class="g-3 needs-validation" novalidate>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="validationCustom01" class="form-label">Número do Protocolo</label>
+                                        <input type="text" disabled class="form-control" id="validationCustom01" value="<?= date("Ymd", time()) . str_pad('1', 4, "0", STR_PAD_LEFT); ?>" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="validationCustom02" class="form-label">Origem do Documento</label>
+                                        <select id="inputState" class="form-control" required>
+                                            <option value="" disabled selected>Choose...</option>
+                                            <option value="SEGOV">SEGOV - SECRETARIA DE GOVERNO </option>
+                                            <option value="PGM">PGM - PROCURADORIA GERAL DO MUNICÍPIO </option>
+                                            <option value="CGM">CGM - CONTROLADORIA GERAL DO MUNICÍPIO </option>
+                                            <option value="SEPLAG">SEPLAG - SECRETARIA DE PLANEJAMENTO E GESTÃO </option>
+                                            <option value="SEURB">SEURB - SECRETARIA DE OBRAS E URBANISMO </option>
+                                            <option value="SEINFRA">SEINFRA - SECRETARIA DE INFRAESTRUTURA E SERVIÇOS PÚBLICOS</option>
+                                            <option value="SEMARH">SEMARH - SECRETARIA DE MEIO-AMBIENTEE RECURSOS HÍDRICOS</option>
+                                            <option value="SDE">SDE - SECRETARIA DE DESENVOLVIMENTO ECONÔMICO</option>
+                                            <option value="SEDUC">SEDUC - SECRETARIA DE EDUCAÇÃO</option>
+                                            <option value="SESA">SESA - SECRETARIA DE SAÚDE</option>
+                                            <option value="STDSMDH"> SECRETARIA DO TRABALHO, DESENVOLVIMENTO SOCIAL, MULHERES E DIREITOS HUMANOS</option>
+                                            <option value="SDA">SDA - SECRETARIA DO DESENVOLVIMENTO AGRÁRIO</option>
+                                            <option value="SECULT">SECULT - SECRETARIA DE CULTURA E TURISMO</option>
+                                            <option value="SECULT">SECULT - SECRETARIA DE JUVENTUDE E ESPORTES</option>
+                                            <option value="OUTROS">OUTROS </option>
+
+                                        </select>
+                                        <!-- <input type="text" class="form-control" id="validationCustom02" value="Otto" required> -->
+                                        <div class="invalid-feedback">
+                                            obrigatorio !
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <label for="validationCustom02" class="form-label">Origem do Documento</label>
-                                    <select id="inputState" class="form-control" required>
-                                                <option value="" disabled selected>Choose...</option>
-                                                <option value="1" >Secretaria de Trabalho, Desenvolvimento Social, Mulheres e Direitos Humanos</option>
-                                            </select>
-                                    <!-- <input type="text" class="form-control" id="validationCustom02" value="Otto" required> -->
-                                    <div class="invalid-feedback">
-                                        obrigatorio !
-                                    </div>
-                                </div>
+
                                 <div class="col-md-4">
                                     <label for="validationCustomUsername" class="form-label">Username</label>
                                     <div class="input-group has-validation">
