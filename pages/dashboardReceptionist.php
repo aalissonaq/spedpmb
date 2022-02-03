@@ -85,7 +85,7 @@
                                             Looks good!
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-8">
                                         <label for="validationCustom02" class="form-label">Origem do Documento</label>
                                         <select id="inputState" class="form-control" required>
                                             <option value="" disabled selected>Choose...</option>
@@ -99,7 +99,7 @@
                                             <option value="SDE">SDE - SECRETARIA DE DESENVOLVIMENTO ECONÔMICO</option>
                                             <option value="SEDUC">SEDUC - SECRETARIA DE EDUCAÇÃO</option>
                                             <option value="SESA">SESA - SECRETARIA DE SAÚDE</option>
-                                            <option value="STDSMDH"> SECRETARIA DO TRABALHO, DESENVOLVIMENTO SOCIAL, MULHERES E DIREITOS HUMANOS</option>
+                                            <option value="STDSMDH">STDSMDH - SECRETARIA DO TRABALHO, DESENVOLVIMENTO SOCIAL, MULHERES E DIREITOS HUMANOS</option>
                                             <option value="SDA">SDA - SECRETARIA DO DESENVOLVIMENTO AGRÁRIO</option>
                                             <option value="SECULT">SECULT - SECRETARIA DE CULTURA E TURISMO</option>
                                             <option value="SECULT">SECULT - SECRETARIA DE JUVENTUDE E ESPORTES</option>
@@ -111,47 +111,50 @@
                                             obrigatorio !
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <label for="validationCustomUsername" class="form-label">Username</label>
-                                    <div class="input-group has-validation">
-                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                    <div class="form-group col-md-2">
+                                        <label for="validationCustom01" class="form-label">Tipo Documento</label>
+                                        <select id="inputState" class="form-control" required>
+                                            <option value="" disabled selected>Choose...</option>
+                                            <option value="oficio">OFÍCIO</option>
+                                            <option value="memorando">MEMORANDO</option>
+                                        </select>
                                         <div class="invalid-feedback">
-                                            Please choose a username.
+                                            obrigatorio !
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="validationCustom03" class="form-label">City</label>
-                                    <input type="text" class="form-control" id="validationCustom03" required>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid city.
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="validationCustom01" class="form-label">Número do Protocolo</label>
+                                        <input type="text" disabled class="form-control" id="validationCustom01" value="<?= date("Ymd", time()) . str_pad('1', 4, "0", STR_PAD_LEFT); ?>" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">
-                                    <label for="validationCustom05" class="form-label">Zip</label>
-                                    <input type="text" class="form-control" id="validationCustom05" required>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid zip.
-                                    </div>
-                                </div>
+
+
+                                <div class="form-row">
                                 <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                         <label class="form-check-label" for="invalidCheck">
-                                            Agree to terms and conditions
+                                            Confirmar as informações
                                         </label>
                                         <div class="invalid-feedback">
                                             You must agree before submitting.
                                         </div>
                                     </div>
                                 </div>
+                                </div>
+                                <div class="form-row mt-2">
                                 <div class="col-12">
                                     <button class="btn btn-primary" type="submit">Submit form</button>
                                 </div>
+                                </div>
+
                             </form>
                         </div>
                         <!-- <div class="d-md-flex justify-content-space m-t-50">
